@@ -1,13 +1,187 @@
-body {
+*,
+::after,
+::before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Mulish', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+  color: #282736;
+}
+
+.container {
+  margin: 5rem auto;
+  width: 90vw;
+  max-width: 40rem;
+  background-color: #fff;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  width: 100%;
+  height: 20rem;
+  background-position: center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  border-radius: 10px 10px 0 0;
+}
+
+.header h1 {
+  color: #fff;
+}
+
+.time {
+  position: absolute;
+  bottom: 1rem;
+  left: 0.5rem;
+}
+
+.alert {
+  border-radius: 6px;
+  padding: 0.3rem 0.8rem;
+  text-transform: capitalize;
+}
+
+.alert-success {
+  color: rgb(17, 110, 17) !important;
+  border: 1px solid rgb(17, 110, 17);
+}
+
+.alert-danger {
+  color: rgb(187, 48, 48) !important;
+  border: 1px solid rgb(187, 48, 48);
+}
+
+.icon-refresh {
+  font-size: 2rem;
+  color: #fff;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  transition: all 0.3 linear;
+}
+
+.icon-refresh:hover {
+  transform: rotate(20deg);
+}
+
+.content {
+  width: 100%;
+  height: 26rem;
+  overflow-y: auto;
+}
+
+.content ul {
+  list-style-type: none;
+  width: 100%;
+}
+
+.list-item {
+  display: flex;
+  padding: 0.8rem 0.5rem;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(194, 194, 194);
+  line-height: 1.6;
+}
+
+.left {
+  display: flex;
+  justify-content: start;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.list-item p {
+  text-transform: capitalize;
+}
+
+.icon-item {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.checked,
+.check {
+  margin-right: 1rem;
+}
+
+.checked {
+  color: rgb(17, 110, 17);
+}
+
+.delete:hover {
+  color: rgb(187, 48, 48);
+}
+
+.edit {
+  margin-right: 1rem;
+}
+
+.edit:hover {
+  color: #bab89b;
+}
+
+.is-editing {
+  background-color: #d8d8b5;
+}
+
+.add-book {
+  border-top: 1px solid #000;
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 3rem;
+}
+
+.form {
+  display: flex;
+  justify-content: start;
+  padding: 5px;
+}
+
+.form button {
+  border: 0;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.icon-add {
+  border: 0;
+  background: transparent;
+  font-size: 2.3rem;
+  color: rgb(17, 110, 17);
+}
+
+.form input {
+  border: none;
+  background: transparent;
+  width: 90%;
+  font-size: 1.2rem;
+  font-family: inherit;
+  border-radius: 15px;
+  color: inherit;
+  font-family: inherit;
+  vertical-align: middle;
+  margin-left: 1rem;
+}
+
+.form input::placeholder {
+  color: #282736;
+}
+
+.form input:focus {
+  outline: none;
 }
