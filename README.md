@@ -1,3 +1,6 @@
-# Budgety
+# To-Read List
 
-React budget application to calculate your monthly incomes and outcomes.
+**For avid readers only :)**
+
+React To-read app for adding the books you want to read in the future :)
+
